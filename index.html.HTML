@@ -1,0 +1,170 @@
+<html>
+    <title>CodeAve.com(Random JavaScript Text)</title>
+    <body style="margin: 0 auto;">
+        <div id="container" style="width:100%; height:100%; text-align: center; margin-top: 300px;">
+        </div>
+    </body>
+    <script language="JavaScript">
+        window.onload = function () {
+            shuffleString();
+            random_text();
+        }
+        const string1 = "";
+        const string2 = "";
+        const string3 = "";
+
+        function random_text(){
+            let str = String0.split(' ');
+            let inputStr = "";
+            for(let j=0; j<str.length; j++) {
+                if(j === 0) {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    inputStr += '<span style="font-weight: bold; font-size:'+fontSize+'px; font-family:'+font+'; ">17.</span>&nbsp;';
+                }
+                else if(j !== str.length -1) {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    inputStr += '<span style="font-weight: bold; font-size:'+fontSize+'px; font-family:'+font+';">'+str[j]+'</span>&nbsp;';
+                } else {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    var text = shuffleText();
+                    inputStr += '<span style="font-weight: bold; font-size:'+fontSize+'px; font-family:'+font+';">'+str[j]+''+text+'</span>';
+                }
+            }
+            let dd = document.getElementById('container');
+            dd.innerHTML += inputStr;
+            dd.innerHTML += '<br><br>';
+
+            let str1 = String1.split(' ');
+            let inputStr1 = "";
+            for(let j=0; j<str1.length; j++) {
+                if(j !== str1.length -1) {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    inputStr1 += '<span style="font-size:'+fontSize+'px; font-family:'+font+';">'+str1[j]+'</span>&nbsp;';
+                } else {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    var text = shuffleText();
+                    inputStr1 += '<span style="font-size:'+fontSize+'px; font-family:'+font+';">'+str1[j]+''+text+'</span>';
+                }
+            }
+            let dd2 = document.getElementById('container');
+            dd2.innerHTML += inputStr1;
+            dd2.innerHTML += '<br><br>';
+
+            let str2 = String2.split(' ');
+            let inputStr2 = "";
+            for(let j=0; j<str2.length; j++) {
+                if(j !== str2.length -1) {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    inputStr2 += '<span style="font-size:'+fontSize+'px; font-family:'+font+';">'+str2[j]+'</span>&nbsp;';
+                } else {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    var text = shuffleText();
+                    inputStr2 += '<span style="font-size:'+fontSize+'px; font-family:'+font+';">'+str2[j]+''+text+'</span>';
+                }
+            }
+            let dd3 = document.getElementById('container');
+            dd3.innerHTML += inputStr2;
+            dd3.innerHTML += '<br><br>';
+
+            let str3 = String3.split(' ');
+            let inputStr3 = "";
+            for(let j=0; j<str3.length; j++) {
+                if(j !== str3.length -1) {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    inputStr3 += '<span style="font-size:'+fontSize+'px; font-family:'+font+';">'+str3[j]+'</span>&nbsp;';
+                } else {
+                    var fontSize = shuffleFontSize();
+                    var font = shuffleFont();
+                    var text = shuffleText();
+                    inputStr3 += '<span style="font-size:'+fontSize+'px; font-family:'+font+';">'+str3[j]+''+text+'</span>';
+                }
+            }
+            let dd4 = document.getElementById('container');
+            dd4.innerHTML += inputStr3;
+            dd4.innerHTML += '<br><br>';
+        };
+
+        function shuffleFontSize () {
+            let fontSize = [
+                '8',
+                '14',
+                '18'
+            ]
+
+            string1Font  = fontSize[Math.floor(Math.random() * fontSize.length)];
+            return string1Font;
+        }
+
+        function shuffleFont () {
+            let fontArr = [
+                'Nanum Myeongjo, serif',
+                'Noto sans Kr, sans-serif',
+                'Nanum Gothic, sans-serif'
+            ];
+            font1 = fontArr[Math.floor(Math.random() * fontArr.length)];
+            return font1;
+        }
+
+        function shuffleText () {
+            let possible = '!?.';
+            text = "";
+                return text += possible.charAt(Math.floor(Math.random() * possible.length));
+        }
+
+        function shuffleString () {
+            let StringArr = [
+                '진이 철수 좋아해',
+                '철수는 진이를 좋아해',
+                '열쇠를 깜박 잊고 두고 온 것이 생각났다',
+                '더 이상 시간을 낭비해서는 안된다',
+                '책임을 져야 할 사람은 바로 너다',
+                '나는 정말 부자가 되고 또 유명해지고 싶다',
+                '그런 것은 지금까지 본 적이 없다',
+                '우리는 만나기만 하면 언제나 다툰다',
+                '나는 학교에 늦지 않도록 일찍 일어났다',
+                '돈이 반드시 행복을 가져오는 것은 아니다',
+                '독서가 정서에 미치는 영향은 운동이 신체에 미치는 영향과 같다',
+                '배도 고프고 피곤하기도 해서, 우리는 더 이상 걸을 수 없었다',
+                '전쟁은 그녀에게서 아들을 빼앗았다',
+                '독서는 우리에게 즐거움을 준다',
+                'TV보는 것은 시간 낭비라고 생각한다',
+                '모퉁이에서 오른쪽으로 돌면 찾을 겁니다',
+                '오늘 아침은 춥습니다. 그렇지 않습니까',
+                '저 예쁜 소녀가 누구인지 압니까',
+                '이 얼마나 멋진 세상인가',
+                '이것이 작년에 가장 잘 팔린 책이다',
+                '그는 한국이 낳은 최고의 시인이다',
+                '내가 말하고 있는 것을 이해하니',
+                '그 문제를 풀었던 방법을 나에게 말해 줘',
+                '월요일은 대부분의 사람들이 우울하게 느끼는 날이다',
+                '이것이 우리가 영어를 공부하는 이유이다',
+                '이곳은 내가 잠자는 방이다',
+                '네가 오고 싶을 때는 언제든지 와도 좋다',
+                '그 소문은 정말일지도 모른다',
+                '그것은 사실임에 틀림없다',
+                '그 소식이 사실일 리가 없다',
+                '그에게 무슨 일이 생겼을지도 모른다',
+                '너는 버스를 잘못 탄 것이 틀림없다',
+                '그녀가 너에게 거짓말을 했을 리가 없다',
+                '너는 그 약속을 잊지 말았어야 했다',
+                '너는 그 일을 할 필요가 없었다',
+                '우리는 다른사람에 대해 나쁘게 말해서는 안 된다',
+                '나는 늘 아침 5시에 일어나곤 했다',
+                '나는 방금 숙제를 끝마쳤다'
+            ]
+
+            String0 = StringArr[Math.floor(Math.random() * StringArr.length)];
+            String1 = StringArr[Math.floor(Math.random() * StringArr.length)];
+            String2 = StringArr[Math.floor(Math.random() * StringArr.length)];
+            String3 = StringArr[Math.floor(Math.random() * StringArr.length)];
+        }
+    </script>
+</html>
